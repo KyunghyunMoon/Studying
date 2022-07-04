@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="tes.js"></script> -->
+
+
+</head>
+<body>
+
+<!--      성적표
+    <script>
+        var hakbun = prompt("학번을 입력하라", "학번");
+        var name = prompt("이름을 입력하라");
+        var kor = parseInt(prompt("국어점수를 입력하라"));
+        var eng = parseInt(prompt("영어점수를 입력하라"));
+        var mat = parseInt(prompt("수학점수를 입력하라"));
+        var tot = kor + eng + mat;
+        var avg = tot / 3;
+        var grade; 
+
+        // if (avg >= 90)
+        //     grade = "수";
+        // else if (avg >= 80)
+        //     grade = "우";
+        // else if (avg >= 70)
+        //     grade = "미";
+        // else if (avg >= 60)
+        //     grade = "양";
+        // else
+        //     grade = "가";
+        
+        switch (parseInt(avg / 10)) {
+            case 10:                                                 - 100이기 때문에
+            case9:
+                grade = '수';
+                break;
+            case 8: 
+                grade = '우';
+                break;
+            case 7: 
+                grade = '미';
+                break;
+            case 6:
+                grade = '양';
+                break;
+            default: 
+                grade = '가';
+                break;
+        }
+        console.log(grade);
+
+        document.write("<table border = '1' align = 'center'><tr>")
+        document.write("<td>학번</td>");
+        document.write("<td>이름</td>");
+        document.write("<td>국어</td>");
+        document.write("<td>영어</td>");
+        document.write("<td>수학</td>");
+        document.write("<td>평균</td>");
+        document.write("<td>총점</td>");
+        document.write("<td>등급</td>");
+        document.write("</tr></tr>");
+
+
+        
+        document.write(`<td>${hakbun}</td>`)
+        document.write(`<td>${name}</td>`)
+        document.write(`<td>${kor}</td>`)
+        document.write(`<td>${eng}</td>`)
+        document.write(`<td>${mat}</td>`)
+        document.write(`<td>${tot}</td>`)
+        document.write(`<td>${avg}</td>`)
+        document.write(`<td>${grade}</td>`)
+        document.write("</tr></table>")
+        
+    </script> -->
+
+
+
+
+<!-- 구구단 -->
+
+
+<!-- <script>
+    var num1 = parseInt(prompt("첫 번째 수를 입력하라!"));
+    var num2 = parseInt(prompt("두 번째 수를 입력하라!"));
+    var min_num, max_num;
+
+    if (num1 > num2){
+        max_num = num1;
+        min_num= num2;
+    }
+
+    else {
+        max_num = num2;
+        min_num = num1;
+    }
+
+    alert("작은 수는" +min_num);
+    alert("큰 수는" +max_num);
+
+    document.write("<table border = '1' align = 'center'>");
+    document.write("<tr align = 'center'>");
+    for (var i = min_num; i <= max_num; i++)
+    {
+        // document.write("<th>" + i + "단" + "</th>");
+        document.write(`<th> ${i} 단 </th>`);                                        - * `을 사용할 경우 +를 할 필요없이 사용가능 *
+    }
+    document.write("</tr>");
+    for(var i = 2; i <=9; i++) 
+    {
+        document.write("<tr align = 'center'>");
+            for(var j = min_num; j <= max_num; j++) {
+                // document.write("<td>" + i + "*" + j + "=" + (i*j) + "</td>");
+                document.write(`<td> ${i} * ${j} = ${i*j} </td>`);                  - * `을 사용할 경우 +를 할 필요없이 사용가능 *
+            }
+            document.write("</tr>");
+          }
+    document.write("</table>");        -->
+
+
+    </script>
+   
+
+
+
+</body>
+</html>
