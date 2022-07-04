@@ -405,27 +405,25 @@ function input_data(){
 }
 
 
-var min_num, max_num; count=0;
 var num = input_data();
 var num1 = num.num_1;
 var num2 = num.num_2;
 
 function minmax_proc(num1, num2){
-    
-
-    if (num1 > num2) {ㄴㅇㅁ
-        max_num = num1;
-        min_num = num2;
+    if (num1 > num2) {
+       var max = num1;
+       var min = num2;
     }
 
     else {
-        max_num = num2;
-        min_num = num1;
+        var max = num2;
+        var min = num1;
     }
-    return{min_num:min_num, max_num:max_num};
+    return{min_num:min, max_num:max};
 }
-
-function prime_number(min, max) {
+var min_max = minmax_proc(num1, num2);
+var min = min_max.min_num;
+var max =  min_max.max_num;
 var num1, num2, min_num, max_num;
 
 num1 = num.num_1;
