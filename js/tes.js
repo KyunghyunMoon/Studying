@@ -398,71 +398,237 @@
 
 //- 소수구하기 함수로
 
-function input_data(){
-    var num1 = parseInt(prompt("첫 번째 숫자를 입력하세요"));
-    var num2 = parseInt(prompt("두 번째 숫자를 입력하세요"));
-    return {num_1:num1, num_2:num2};
-}
+// function input_data(){
+//     var num1 = parseInt(prompt("첫 번째 숫자를 입력하세요"));
+//     var num2 = parseInt(prompt("두 번째 숫자를 입력하세요"));
+//     return {num_1:num1, num_2:num2};
+// }
 
 
-var num = input_data();
-var num1 = num.num_1;
-var num2 = num.num_2;
+// var num = input_data();
+// var num1 = num.num_1;
+// var num2 = num.num_2;
 
-function minmax_proc(num1, num2){
-    if (num1 > num2) {
-       var max = num1;
-       var min = num2;
-    }
+// function minmax_proc(num1, num2){
+//     if (num1 > num2) {
+//        var max = num1;
+//        var min = num2;
+//     }
 
-    else {
-        var max = num2;
-        var min = num1;
-    }
-    return{min_num:min, max_num:max};
-}
-var min_max = minmax_proc(num1, num2);
-var min = min_max.min_num;
-var max =  min_max.max_num;
-var num1, num2, min_num, max_num;
+//     else {
+//         var max = num2;
+//         var min = num1;
+//     }
+//     return{min_num:min, max_num:max};
+// }
+// var min_max = minmax_proc(num1, num2);
+// var min = min_max.min_num;
+// var max =  min_max.max_num;
+// var num1, num2, min_num, max_num;
 
-num1 = num.num_1;
-num2 = num.num_2;
+// num1 = num.num_1;
+// num2 = num.num_2;
 
-var min_max = minmax_proc(num1, num2);
+// var min_max = minmax_proc(num1, num2);
 
-min_num = min_max.min_num;
-max_num = min_max.max_num;
+// min_num = min_max.min_num;
+// max_num = min_max.max_num;
 
-function prime_number(min_num, max_num
- for(var i = min_num; i <= max_num; i++){
-    for(var j = 2; j < i; j++)
-    {
-        if(i % j == 0) {
-            break;
-        }
-    }
-        function total_count()
-
-
-        if(i == j){
-            console.log(i);
-            count++;
-        }
- }
- return count;
-}
-function total_count(cnt){
-    console.logo("총소수의 갯수 = ", cnt);
-}
-var num = input_data();
-var min_max = minmax_proc(num.num1, num.num2);
-var min_max = minmax_proc(num.num1, num.num2);
-var cnt = prime_number(min_max.min, min_max.max);
-total_count(cnt);
+// function prime_number(min_num, max_num
+//  for(var i = min_num; i <= max_num; i++){
+//     for(var j = 2; j < i; j++)
+//     {
+//         if(i % j == 0) {
+//             break;
+//         }
+//     }
+//         function total_count()
 
 
+//         if(i == j){
+//             console.log(i);
+//             count++;
+//         }
+//  }
+//  return count;
+// }
+// function total_count(cnt){
+//     console.logo("총소수의 갯수 = ", cnt);
+// }
+// var num = input_data();
+// var min_max = minmax_proc(num.num1, num.num2);
+// var min_max = minmax_proc(num.num1, num.num2);
+// var cnt = prime_number(min_max.min, min_max.max);
+// total_count(cnt);
 
-var minmax_proc = (num1, num2) => {
-    if(num1 > num2)
-}
+
+
+// var minmax_proc = (num1, num2) => {
+//     if(num1 > num2)
+// }
+
+
+
+// [07.05]
+
+// var var1 = 10
+// for (var var2=1; var2<5; var2++){
+//     console.log(var2);
+// }
+// console.log(var2);
+
+
+
+// console.log(var1);
+// if(10){
+//     const var2 = 100;
+//     console.log(var1);
+//     console.log(var2);
+// }
+// console.log(var1);
+// console.log(var2)
+
+// var a = 1;
+// var b = 1 ;
+// var c = 1 ;
+// var d = 1 ;
+// var arr =[1,2,2,3] 
+// var arr = new Array(1,1,1,1);
+// var hap = 0 ;
+// for (let i=0; i<arr.length; i++)
+//     hap += arr[i]
+
+// console.log(hap)
+
+
+// var arr1 = [];        //var arr1 = new Array()
+// console.log(arr1.length);
+// arr1[0] = 10;
+// arr1[1] = "AAA";
+// arr1[2] = "BBB";
+// console.log(arr1.length);
+// for(let i = 0; i<arr1.length; i++){
+//     console.log(arr1[i]);
+// }
+
+// delete arr1[1];
+// for(let i = 0; i<arr1.length; i++){
+//     console.log(arr1[i]);
+// }
+
+
+// const arr = [1, 2, 3];
+// arr[0] =10;
+// console.log(arr.length);
+// console.log(arr);
+// arr.splice(1, 1);
+// console.log(arr.length);
+// console.log(arr);
+
+
+// const arr = [1 ,2 ,2, 3];
+// console.log(arr.indexOf(2));
+// console.log(arr.indexOf(4));
+// console.log(arr.indexOf(2, 2)); -- 앞은 시작위치. 뒤는 찾을 위치
+
+
+// const arr = [1, 2];
+// console.log(arr);
+// let result = arr.pop();
+// console.log(result);
+// console.log(arr);
+
+
+// const arr = [];
+// arr.push(1);
+// arr.push(2);
+// arr.push(3);
+// for (let i=0; i<3; i++)
+//     console.log(arr.pop());
+
+// const arr = [1, 2];
+// console.log(arr);
+// let res = arr.shift();
+// console.log(res);
+// console.log(arr);
+
+
+// const arr1 = [1, 2];
+// const arr2 = [3, 4];
+// let result = arr1.concat(arr2);
+// console.log(result);
+// console.log(arr1);
+// console.log(arr2);
+
+// const arr = [1, 2, 3, 4];
+// const result = arr.splice(1, 0 , 20);
+// console.log(result);
+// console.log(arr);
+
+
+// const arr = [1, 2, 3, 1, 2];
+// function removeALL(array, item) {
+//     return array.filter(v => v % 2 == 0);
+
+// }
+// console.log(removeAll(arr, 2));
+
+
+
+
+
+// points.sort((a, b) => b -a);   --- 내림차순 정렬 됨
+
+
+// const todos = [
+//     { id: 4, content: 'JavaScript'},
+//     { id: 1, content: 'HTML'},
+//     { id: 2, content: 'CSS'}
+// ];
+
+// function compare(key) {
+//     return (a, b) => (a[key] > b[key] ? 1: (a[key] < b[key] ? -1 : 0));
+
+// }
+// todos.sort(compare('content'));
+// console.log(todos);
+
+
+
+// const numbers = [1, 2, 3];
+// let pows = [];
+
+// numbers.forEach(item => pows.push(item **2));
+// console.log(pows);
+
+
+// const numbers = [1, 4, 9];
+// const roots = numbers.map(item => Math.sqrt(item))
+// console.log(roots);
+// console.log(numbers);
+
+
+// const sum = [1, 2, 3, 4].reduce((accumulator, currentValue, index, array) =>
+//     accumulator + currentValue, 10);
+
+// console.log(sum);
+
+
+
+
+// console.log(new Date(2020,2, 26));
+// console.log(new Date (2020, 2,26, 10, 11));
+// console.log(Date.now());
+// console.log(new Date(Date.now()));
+
+
+// const strObj = new String("MBC");
+// console.log(strObj);
+// console.log(strObj[0]);
+// strObj[0] = 'm';    -문자열 일부 작업 불가
+// const strObj2 = "KBS";
+// console.log(strObj2[0]);
+
+
+
+
