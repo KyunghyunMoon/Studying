@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+        <script>
+            // 1 window.onload = function() {
+            //     var h1 = document.querySelector('h1');
+            //     h1.style.backgroundColor = "red";   //--카멜 표기법 (background-color)---
+            //     document.querySelector('h2').style.color = "red";
+            // };
+
+
+            // 2 window.onload = function () {
+            //     var header = document.getElementById('header');
+
+            //     header.style.color = 'orange';
+            //     header.style.background = 'red';
+            //     header.innerHTML = 'From JavaScript';    //--inner:앞에 html에 from javascript를 삽입하라--
+            // };
+
+                //3  window.onload = function() {
+                //     var header = document.querySelector('h1');
+
+                //     header.style.color = 'orange';
+                //     header.style.background = 'red';
+                //     header.innerHTML = 'From JavaScript';
+                // }
+
+                // 4 window.onload = function(){
+                //     var headers = document.querySelectorAll('h1');
+                //     for(var i =0; i < headers.length; i++) {
+                //         var header = headers[i];
+
+                //         header.style.color = 'orange';
+                //         header.style.background = 'red';
+                //         header.innerHTML = 'From JavaScript';
+                //     }
+                // }
+                // 5  window.onload = function (){
+                //     var output = '';
+                //     for ( var i =0, i < 10; i++) {
+                //         output += '<h1>header - ' + i + '</h1>';
+                //     }
+                //     document.body.textContent = output;
+                // };
+
+                // 6  window.onload = function(){
+                //     var output = '';
+                //     for (var i = 0; i < 256; i++){
+                //         output += '<div></div>';
+                //     }
+                //     document.body.innerHTML = output;
+                //     var divs = document.querySelectorAll('div');
+                //     for (var i = 0; i <divs.length; i++){
+                //         var div = divs[i];
+
+                //         div.style.height = '2px';
+                //         div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+
+                //     }
+                // };
+
+
+                // 7. window.onload = function(){
+                //     var image = document.getElementById('image');
+
+                //     image.src = 'man.png';
+                //     image.width = 300;
+                //     image.height = 200;
+                // };
+
+
+                // 8 window.onload = function(){
+                //     document.body.setAttribute('data-custom', 'value');
+
+                //     var dataCustom = document.body.getAttribute('data-custom');
+                //     alert(dataCustom);
+                // };
+
+
+
+                // 9 var resId;
+                // window.onload = function (){
+                //     var clock = document.getElementById('clock');
+                //     resId = setInterval(function () {
+                //         var now = new Date();
+                //         const year = now.getFullYear();
+                //         const month = now.getMonth() + 1;
+                //         const date = now.getDate();
+                //         let hour = now.getHours();
+                //         let minute = now.getMinutes();
+                //         let second = now.getSeconds();
+                //         const result = `${year}년 ${month}월 ${date}일 ${hour}시 : ${minute}분 : ${second}`;
+                //         clock.innerHTML = result;
+                //     }, 1000);
+
+                //     var start = () => {
+                //         resId 
+                //     }
+                // };
+                
+                
+                // function stop() {
+                //     clearInterval(resId);
+                // }
+                
+        </script>
+</head>
+<body>
+    <!--1 <h1>Process - 1</h1>
+    <h1>Process - 1</h1>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2> -->  
+
+
+    <!--2 <h1 id="header">Header</h1> -->
+
+
+    <!--3 <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1> -->
+
+    <!-- 7 <img id="image"> -->
+
+    <!-- 9 <h1 id="clock"></h1> -->
+</body>
+</html>

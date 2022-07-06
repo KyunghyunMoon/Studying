@@ -479,6 +479,9 @@
 
 
 
+
+
+// ------미 해결-------
 // console.log(var1);
 // if(10){
 //     const var2 = 100;
@@ -487,6 +490,9 @@
 // }
 // console.log(var1);
 // console.log(var2)
+
+
+
 
 // var a = 1;
 // var b = 1 ;
@@ -499,6 +505,9 @@
 //     hap += arr[i]
 
 // console.log(hap)
+
+
+
 
 
 // var arr1 = [];        //var arr1 = new Array()
@@ -517,6 +526,9 @@
 // }
 
 
+
+
+
 // const arr = [1, 2, 3];
 // arr[0] =10;
 // console.log(arr.length);
@@ -526,10 +538,16 @@
 // console.log(arr);
 
 
+
+
+
 // const arr = [1 ,2 ,2, 3];
 // console.log(arr.indexOf(2));
 // console.log(arr.indexOf(4));
 // console.log(arr.indexOf(2, 2)); -- 앞은 시작위치. 뒤는 찾을 위치
+
+
+
 
 
 // const arr = [1, 2];
@@ -539,6 +557,8 @@
 // console.log(arr);
 
 
+
+
 // const arr = [];
 // arr.push(1);
 // arr.push(2);
@@ -546,11 +566,15 @@
 // for (let i=0; i<3; i++)
 //     console.log(arr.pop());
 
+
+
 // const arr = [1, 2];
 // console.log(arr);
 // let res = arr.shift();
 // console.log(res);
 // console.log(arr);
+
+
 
 
 // const arr1 = [1, 2];
@@ -560,10 +584,16 @@
 // console.log(arr1);
 // console.log(arr2);
 
+
+
+
+
 // const arr = [1, 2, 3, 4];
 // const result = arr.splice(1, 0 , 20);
 // console.log(result);
 // console.log(arr);
+
+
 
 
 // const arr = [1, 2, 3, 1, 2];
@@ -578,6 +608,8 @@
 
 
 // points.sort((a, b) => b -a);   --- 내림차순 정렬 됨
+
+
 
 
 // const todos = [
@@ -619,7 +651,8 @@
 // console.log(new Date(2020,2, 26));
 // console.log(new Date (2020, 2,26, 10, 11));
 // console.log(Date.now());
-// console.log(new Date(Date.now()));
+// rud1553617$
+
 
 
 // const strObj = new String("MBC");
@@ -629,6 +662,10 @@
 // const strObj2 = "KBS";
 // console.log(strObj2[0]);
 
+
+
+
+// [07.06]
 
 
 

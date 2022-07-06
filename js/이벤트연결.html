@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. function buttonClick(){
+        //     alert('click');
+        // }
+
+        // 2 window.onload = function(){
+        //     var button = document.getElementById('button');
+            // button.onclick = function() {
+            //     alert('click');
+            // };
+
+
+            // button.addEventListener('click', function (){
+            //     alert('click');
+
+            // button.addEventListener('click', () => {      // ----화살표 함수 변환. 
+            //     alert('click');
+            // })
+        //     });
+        //     button.addEventListener('click', click_event);
+        // };
+
+            //  3   window.onload = function (event) {
+            //         console.log(event);
+            //     };
+
+            window.onload = function() {
+                var button = document.getElementById('button');
+
+                button.onclick = function(event) {
+                    alert('클릭 이벤트 발생!');      
+                    event.preventDefault(); 
+                    // return false;            //-기본 이벤트 제거
+                };
+            };
+
+        
+</script>
+</head>
+<body>
+    <!-- <button onclick="alert('click')">버튼</button>" -->
+
+
+
+    <!-- <button id = "button">버튼</button> -->
+
+    <a id = "button" href="http://naver.com">가즈앗</a>
+</body>
+</html>
