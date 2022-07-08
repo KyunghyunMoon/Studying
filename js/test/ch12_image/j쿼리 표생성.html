@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+            // $(document).ready(function () {
+            //     for ( var i = 0; i <10; i++){
+            //         var $dynamic = $('<h1>Create Document Object + ' + i + '</h1>')
+            //         .css({
+            //             backgroundColor: 'black',
+            //             color: 'red'
+            //         });
+            //         $('body').append($dynamic);
+            //     }
+            //     });
+                
+
+
+
+
+
+
+                
+                $(document).ready(function () {               기본버전
+                    $('').click(function() {
+                        $('div').append(`
+                        <table border="1" >
+                            <tr>
+                                <td width ="100"></td>
+                                <td width ="100"></td>
+                                <td ><button>del</button></td>
+                            </tr>
+                        </table>`);
+
+                        
+                    });
+                });
+
+
+
+
+
+            // $(document).ready(function(){
+            //     $("#btnAdd").click(function() {
+            //         var row = '<tr><td><input type="text" name="id" size="10"></td>';
+            //             row += '<td><input type="text" name="irum" size="10"></td>'
+            //             row += '<td><input type="button" class="btnDel" value="Del">'
+            //             row += '</td></tr>';
+                    
+            //         $("#list").append(row);
+
+            //     });
+
+            //     $("#list").on("clilck", ".btnDel", function() {
+            //         $(this).parent().parent().remove();
+            //     });
+            // });
+
+                    
+
+
+
+                
+
+    </script>
+
+    
+</head>
+<body>
+<button>추가</button>
+<H1 id="tb"></H1>
+
+
+<div>
+<table id = "list" border="1">
+    <tr>
+        <td width="100"></td>
+        <td width="100"></td>
+        <td><button>del</button></td>
+    </tr>
+</table>
+</div>
+
+
+<!-- <table border=1>
+    <tr>
+        <td class="irum">이름입력</td>
+        <td class="score">점수입력</td>
+        <td><input type="button" id="btnAdd" value="추가"></td>
+    </tr>
+
+</table>
+
+<table id="list" border="1"></table> -->
+</body>
+
+
+</html>

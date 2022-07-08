@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="jquery-3.6.0.js"> </script>
+    <!-- <script src="jquery-3.6.0.js"> </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     //1  $(document).ready(function () {
     //     $('.box').css({
@@ -53,23 +54,197 @@
             //     });
             // });
 
+    //    6  $(document).ready(function(){
+    //         $("body").on("click", "#outer", function(){alert('outer');});
+    //         // $("body").html('<div id = "outer"></div>');
+    //         // $("#outer").on("click", function(){alert('outer');});
+    //         // const outer = document.querySelector('#outer');
+    //         // outer.addEventListener('click',function(){
+    //         //     alert('outer');
+    //         // }, true);
+    //     });
+
+    //     function tag_insert(){
+    //         // $('body').html('<div id = "outer"></div>');
+    //         $('body').append('<div id="outer"></div>');
+
+    //     }
+        //7 기본 이벤트 제거
+    // $(document).ready(function () {
+    //     $('a').click(function (event) {
+    //         alert('click');
+    //         // event.preventDefault();
+    //         return false;
+
+    //     });
+    // });
+
+    // 8 태그효과
+    // $(document).ready(function () {
+    //     $('button').click(function() {
+    //         $('.page').fadeToggle('slow');
+    //     });
+    // });
+
+    // 9 $(document).ready(function () {
+    //     $('#box').css({
+    //         width: 100,
+    //         height: 100,
+    //         background: 'red'
+    //     }).animate({
+    //         width: 300,
+    //         opacity: 0.5,
+    //     }, 500);
+
+    // });
+
+    //  9 $(document).ready(function() {
+    //     var clearQueue = false;
+    //     var gotoEnd = false;
+
+    //     $('#clearQueue').change(function() {
+    //         clearQueue = $(this).prop('checked')
+    //     });
+
+    //     $('#goToEnd').change(function () {
+    //         goToEnd = $(this).prop('checked');
+    //     });
+
+    //     $('#stopButton').click(function() {
+    //         $('#box').stop(clearQueue, goToEnd);
+    //     });
+
+    //     $('#box').css({
+    //         width: 100,
+    //         height: 100,
+    //         background: 'red'
+    //     })
+
+    //     setInterval(function () {
+    //         $('#box').animate({
+    //             width: 200
+    //         }, 1000).delay(1000).animate({
+    //             width: 100,
+    //             height: 100
+    //         }, 3000);
+    //     });
+
+    // });
+
+    // 10 포커스 이동 window.onload = function() {
+    //     var input_1 = document.querySelectorAll('input')[0];
+    //     var input_2 = document.querySelectorAll('input')[1];
+
+    //     input_1.onkeydown = function () {
+    //         if ( 6 <= input_1.value.length ) {
+    //             input_2.focus();
+    //         }
+    //     };
+
+    //     input_2.onkeydown = function (event) {
+    //         var event = event || window.event;
+    //         if (event.keyCode == 8 && input_2.value.length == 0) {
+    //             input_1.focus();
+    //         }
+    //     };
+    // };
+
+
+    // 플래시
+    // var res, count, image, frames;                       //전역변수 설정했으면 지역변수에서 var 붙이지 않기
+    // window.onload = function(){
+    //     count = 0;
+    //     image = document.getElementById('image');
+    //     frames = [
+    //         '0.png',  '1.png',  '2.png',  '3.png',  '4.png', 
+    //         '5.png',  '6.png',  '7.png',  '8.png',  '9.png', 
+    //         '10.png',  '11.png',  '12.png',  '13.png',  '14.png', 
+    //     ];
+    // };
+
+    // function start() {
+    //     res = setInterval(function () {
+    //     image.src = frames[count % frames.length];
+    //     count = count + 1;
+    //     }, 1000 / 20);
+    // }
+
+    // function stop(){
+
+    //     clearInterval (res);
+    // }
+    
+    // 플래시 j쿼리 $(document).ready(function() {
+    //     var res;
+    //     var count = 0;
+    //     var image = document.getElementById('image');
+    //     var frames = [
+    //         '0.png',  '1.png',  '2.png',  '3.png',  '4.png', 
+    //         '5.png',  '6.png',  '7.png',  '8.png',  '9.png', 
+    //         '10.png',  '11.png',  '12.png',  '13.png',  '14.png',
+    //     ];
+
+    //     $('#btn1').on('click',function(){
+    //         res = setInterval(function() {
+    //             image.src = frames[count % frames.length];
+    //             count = count + 1;
+    //         }, 1000 / 20)
+    //     });
+    //     $('#btn2').on('click', function() {
+    //         clearInterval(res);
+    //     });
+    // });
             
 </script>
 <body>
-    <!-- // 1 <div class="box"></div>
-    // <div class="box"></div>
-    // <div class="box"></div> -->
+<!-- <div class="box"></div>
+ <div class="box"></div>
+ <div class="box"></div>  -->
 
 
     <!-- 2 <h1>Header - 0</h1>
-    // <h1>Header - 1</h1> -->
+     <h1>Header - 1</h1> -->
 
-    <!--3 // <h1>Header - 0</h1>
-    // <h1>Header - 0</h1>
-    // <h1>aaa<br>bbbb<br>cccc</h1> -->
+    <!--3  <h1>Header - 0</h1>
+     <h1>Header - 0</h1>
+     <h1>aaa<br>bbbb<br>cccc</h1> -->
 
     <!--4  <div id="box"></div> -->
 
     <!-- 5 <h1>Click</h1> -->
+
+     <!-- 6 <button onClick="tag_insert()">태그추가</button> -->
+     <!-- <a href="http://hanb.co.kr">Hanbit Media</a> -->
+
+    <!-- 8  <button>Toggle Show</button>
+     <div class="page">
+        <h1>Losadnkjasdkndasnkdnjsda</h1>
+        <p>sadasdasdasdasdsad</p>
+     </div> -->
+
+     <!-- <div id="box"></div> -->
+
+    <!-- 9  <label>clearQueue</label>
+     <input id="clearQueue" type="checkbox">
+     <br>
+     <label>goToEnd</label> -->
+
+     <!-- 10<input type="text" maxlength="6">
+     <span>-</span>
+     <input type="text" maxlength="7"> -->
+
+
+     <!-- 플래시 
+    <input type="button" id = "btn1" value="시작" >
+    <input type="button" id = "btn2" value="정지" >
+    <br><br>
+     <img id="image" /> -->
+
+
+    
+
+
+
+
 </body>
 </html>
