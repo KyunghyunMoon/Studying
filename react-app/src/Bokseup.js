@@ -74,3 +74,5 @@ function Bokseup(){
 }
 
 export default Bokseup;
+
+// 리액트에서 윈도우 업로드 어떻게 사용하냐, j쿼리 도큐먼트.레디 썼는데 컴포넌트를 그대로 쓰면 될 거 같은데 안 됐다. 다른 방법있나?

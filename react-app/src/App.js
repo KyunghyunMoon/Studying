@@ -1,10 +1,20 @@
 import './App.css';
-import EventPractice from './EventPractice';
-
+import Inputstudying from './Inputstudying';
+import Turn from './Turn';
 
 
 const App = () => {
-  return <EventPractice/>
+
+  return (
+    <div align = "center">
+      <Inputstudying/> 
+      <br />
+      <br />
+      <br />
+    <Turn/>
+
+    </div>
+  ) 
 };
 
 export default App;
