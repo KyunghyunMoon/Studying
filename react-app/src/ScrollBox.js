@@ -1,5 +1,5 @@
 import { Component } from 'react';
-
+ //152p 스크롤박스
 class ScrollBox extends Component {
     scrollToBottom = () => {
         const { scrollHeight, clientHeigt } = this.box;
@@ -10,8 +10,8 @@ class ScrollBox extends Component {
     render(){
         const style ={
             border: '1px solid black',
-            height: '300px',
-            width: '300px',
+            height: '600px',
+            width: '500px',
             overflow: 'auto',
             position: 'relative'
         };
@@ -19,7 +19,7 @@ class ScrollBox extends Component {
         const innerStyle = {
             width: '100%',
             height:'650px',
-            background: 'linear-gradient(red, yellow, skyblue, blue, purple, black)'   //T순차적으로 색 변경
+            background: 'linear-gradient(black, white, black, white, black, white, black, white, black,)'   //T순차적으로 색 변경
         }
     
     return (
