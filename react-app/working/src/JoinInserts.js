@@ -15,7 +15,7 @@ const JoinInserts = ({ onInsert, form, onUpdate }) => {   //새로운 데이터 
     if (form.num !== undefined) {     
       value.num = form.num;           //수정될 때 실행
     }
-    value.id = idRef.current.value;   //수정할 때, 추가할 때 둘다 실행. gender까지.  ref를 통해 값을 읽어옴.
+    value.id = idRef.current.value;   //수정할 때, 추가할 때 둘다 실행. gender까지.  ref를 통해 값을 읽어옴. 수정한 값을 value에 저장
     value.password = passwordRef.current.value;
     value.email = emailRef.current.value;
     value.gender = genderRef.current.checked === true ? "여자" : "남자";
@@ -28,8 +28,8 @@ const JoinInserts = ({ onInsert, form, onUpdate }) => {   //새로운 데이터 
     } else {
       onUpdate(value);  //수정한 데이터 들어있음
     }
-    setValue({         //value를 초기화 시켜준다. 비워준다.
-      num: 0,
+    setValue({         //value를 초기화 시켜준다. 비워준다.    setvalue의 정확한 역할: 새로운 객체를 만드는 거.
+      num: 0,          //joins이름을 붙이고 value객체를 만들면 join input에서 수정할 데이터나 추가할 데이터를 value에 추가. 이 데이터를 oninsert로 출력. 
       id: "",
       password: "",
       email: "",

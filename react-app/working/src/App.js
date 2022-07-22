@@ -17,7 +17,7 @@ function App() {
       value.num = nextNum.current;
       setJoins(joins.concat(value));
       nextNum.current += 1;
-      setForm({});       //어떤 작업인지 알 수 없으니 일단 초기화.
+      
     },
     [joins]
   );
