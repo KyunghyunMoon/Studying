@@ -25,6 +25,7 @@ const App = () => {
     // },
   ]);
   const nextId = useRef(4);
+  const updateData = {};
   const onInsert = useCallback(
     text => {
       const todo = {
@@ -45,6 +46,7 @@ const App = () => {
     [todos],
   );
 
+  
   const onToggle = useCallback(
     id => {
       setTodos(
@@ -58,7 +60,7 @@ const App = () => {
 
   return (
           <TodoTemplate>
-          <TodoInsert onInsert={onInsert} />
+          <TodoInsert onInsert={onInsert} updateData={updateData}/>
           <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
           </TodoTemplate>
   );

@@ -6,29 +6,7 @@ const FormInput = ( { onInsert }) => {
     const [mail1, setMail1] = useState('');
     const [mail2, setMail2] = useState('');
     const [gender, setGender] = useState('');
-    // const [man, setMan] = useState('');
-    // const [woman, setWoman] = useState({
-        // Id:'',
-        // password:'',
-        // mail1: '',
-        // mail2: '',
-        // man: '',
-        // woman: '',
-    
-    
-    
-
-     // -1단계 폼의 첫 값을 지정
-    // const {Id, password, mail1, mail2, man, woman} = form;
-    // const onChange = e => {
-    //     const nextForm = {
-    //         ...form,
-    //         [e.target.name]:e.target.value
-    //     };
-    //     setForm(nextForm);
-    // };  
-    
-    //-2단계
+ 
 
     const onChange1 = useCallback(
         (e) => {
@@ -54,48 +32,8 @@ const FormInput = ( { onInsert }) => {
         (e) => {
             setGender(e.target.value);
         }, []);    
-        
-    // const onChange5 = useCallback(
-    //     (e) => {
-    //         setMan(e.target.value);
-    //     }, []);
-    
-    // const onChange6 = useCallback(
-    //     (e) => {
-    //         setWoman(e.target.value);
-    //     }, []);    
-
 
     
-    // const onSubmit = useCallback (
-    //     e => {
-    //         onInsert(form);
-    //         setForm('');
-            
-    //         e.preventDefault();
-    //     },
-    //     [onInsert, form],
-    // );
-
-
-    // const onClick = () => {     //-3단계
-    //     alert(`
-    //     아이디: ${Id} 
-    //     비밀번호: ${password} 
-    //     메일: ${mail1} @ ${mail2} 
-    //     성별: ${gender}`);
-        // setForm({
-        //     Id:'',
-        //     password:'',
-        //     mail1:'',
-        //     mail2:'',
-        //     man:'',
-        //     woman:'',
-        // });               //{}쓴 이유는 객체 형태로 파라미터 쓰려고
-    // };
-    
-
-
     const onSubmit = useCallback (
         (e) => {
             onInsert(
@@ -119,8 +57,7 @@ const FormInput = ( { onInsert }) => {
             <th width="150px" height="30px">비밀번호</th>
             <td>
                {password}
-                {/* <input type="password" name="password" size="30" 
-                    placeholder="비밀번호" value={password}onChange={onChange2}  /> */}
+               
             </td>
         </tr>
 
@@ -130,13 +67,7 @@ const FormInput = ( { onInsert }) => {
                 {mail1}
                 @
                 {mail2}
-                {/* <input type="text" name="mail1" size="10" placeholder="아이디" value={mail1}onChange={onChange3}  /> @
-                <select name="mail2"  placeholder="주소" value={mail2}onChange={onChange4}>
-                    <option value="">메일주소선택</option>
-                    <option value="hanmail.net" >hanmail.net</option>
-                    <option value="naver.com" >naver.com</option>
-                    <option value="nate.com" >nate.com</option>
-                </select> */}
+                
             </td>
         </tr>
 
@@ -155,16 +86,12 @@ const FormInput = ( { onInsert }) => {
                     value = {e.gender}
                     className = 'gwoman'
                 /> <p className='woman'>여자</p>
-                {/* <input type="radio" name="gender" placeholder="남자" value={man}onChange={onChange5} />남자
-                <input type="radio" name="gender"placeholder="여자" value={woman}onChange={onChange6} />여자 */}
+              
             </td>
         </tr>
         </tbody>
         </table>
-        /* <td colspan="2" align="center">
-        <button onClick={onClick} type="submit" >확인</button> */
-        // </td>
-        // </table>       
+      
 );
 setId('');
 setPassword('');
@@ -209,8 +136,7 @@ e.preventDefault();
                 onChange={onChange2}
                 value={password}
                 />
-                {/* <input type="password" name="password" size="30" 
-                    placeholder="비밀번호" value={password}onChange={onChange2}  /> */}
+             
             </td>
         </tr>
 
@@ -235,13 +161,7 @@ e.preventDefault();
                     <option value="naver.com" >naver.com</option>
                     <option value="nate.com" >nate.com</option>
                 </select>
-                {/* <input type="text" name="mail1" size="10" placeholder="아이디" value={mail1}onChange={onChange3}  /> @
-                <select name="mail2"  placeholder="주소" value={mail2}onChange={onChange4}>
-                    <option value="">메일주소선택</option>
-                    <option value="hanmail.net" >hanmail.net</option>
-                    <option value="naver.com" >naver.com</option>
-                    <option value="nate.com" >nate.com</option>
-                </select> */}
+               
             </td>
         </tr>
 
@@ -263,8 +183,7 @@ e.preventDefault();
                     className = 'gwoman'
                     onChange={onChange5}
                 /> <p className='woman'>여자</p>
-                {/* <input type="radio" name="gender" placeholder="남자" value={man}onChange={onChange5} />남자
-                <input type="radio" name="gender"placeholder="여자" value={woman}onChange={onChange6} />여자 */}
+               
             </td>
         </tr>
           <td align="center">
