@@ -29,7 +29,7 @@ const JoinListItem = ({ join, idx, onRemove, onUpdateForm }) => {
                   type="button"
                   name="btn"
                   value="수정"
-                  onClick={() => onUpdateForm(idx)}
+                  onClick={() => onUpdateForm(idx)}   //수정할 데이터의 위치 
                 />
                 <input
                   type="button"

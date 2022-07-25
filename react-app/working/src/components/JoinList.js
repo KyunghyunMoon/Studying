@@ -6,7 +6,7 @@ const JoinList = ({ joins, onRemove, onUpdateForm }) => {
       {joins.map((join, index) => (
         <JoinListItem
           join={join}
-          idx={index}
+          idx={index}    //onupdate할 때 사용됨.
           onRemove={onRemove}
           onUpdateForm={onUpdateForm}
         />
