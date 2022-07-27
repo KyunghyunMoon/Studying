@@ -1,0 +1,11 @@
+{
+  "name": "vanilla-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@parcel/config-default": "^2.6.2",
+    "@parcel/transformer-raw": "^2.6.2",
+    "redux": "^4.2.0"
+  }
+}
