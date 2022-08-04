@@ -43,6 +43,7 @@ const Sex = () => {
 
                         <li>sql에서 한글사용은 자제를 하자</li>
                         <li>한글은 한 글자가 3byte, 영어는 한 글자가 1byte</li>
+                        <li>concat: 문자열을 연결해줌</li>
                     </ul>
         </div>
     );
