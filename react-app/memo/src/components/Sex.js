@@ -40,6 +40,9 @@ const Sex = () => {
                             concat 문자와 문자연결
                         </li>
                         <img src = {photo} alt='sex'></img>
+
+                        <li>sql에서 한글사용은 자제를 하자</li>
+                        <li>한글은 한 글자가 3byte, 영어는 한 글자가 1byte</li>
                     </ul>
         </div>
     );
