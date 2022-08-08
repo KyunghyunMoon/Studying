@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Memo from './components/Memo';
 import React from 'react';
-import Sex from './components/Sex';
+import Memo2 from './components/Memo2';
 import {Route, Routes } from 'react-router-dom';
 import Profile from './components/Profile';
 import Article from './components/Article';
@@ -13,7 +13,7 @@ const App = () => {
     <Routes>
       <Route element={<Layout/>}>
         <Route path = "/" element={<Memo />} />
-        <Route path = "/sex" element={<Sex />} />
+        <Route path = "/Memo2" element={<Memo2 />} />
         <Route path = "/profiles/:username" element ={<Profile />} />
       </Route>
       <Route path = "/articles" element ={<Articles />}>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import photo from './text_size.png';
-const Sex = () => {
+const Memo2 = () => {
     return (
         <div>
            
@@ -26,11 +26,10 @@ const Sex = () => {
 
                     <li>update 테이블 set 열1=값1, 열2=값2.. where 조건;</li><br/>
                     <li>delete from  rollback을 통해 복구 가능
-                        truncate는 데이터는 지우고 테이블은 남김. 복구 불능<br/>
-                  
-                    </li>
+                        truncate는 데이터는 지우고 테이블은 남김. 복구 불능<br/></li>
 
                     
+
                     <ul>
                         <li>
                             now는 페이지 방문기록 남기는 용
@@ -39,14 +38,24 @@ const Sex = () => {
                             cast는 반올림!
                             concat 문자와 문자연결
                         </li>
-                        <img src = {photo} alt='sex'></img>
+                        <img src = {photo} alt='loading..'></img>
 
                         <li>sql에서 한글사용은 자제를 하자</li>
                         <li>한글은 한 글자가 3byte, 영어는 한 글자가 1byte</li>
                         <li>concat: 문자열을 연결해줌</li>
+                        <li>pad = padding의 약자</li>
+                        <li>trim: 불필요한 공백 제거</li>
+                        <li>inner join: 같은 거 조인, 내부조인
+                            equi = equal
+                            한정자 = 규정자
+                            constrait: 제약
+                            cascade:
+                            
+                        </li>
+                        <li></li>
                     </ul>
         </div>
     );
 };
 
-export default Sex;
+export default Memo2;
