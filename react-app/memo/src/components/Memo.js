@@ -9,7 +9,7 @@ const Memo = () => {
         <div className='ho'>
           <h1 align="center" class name="head">SQL</h1>
         </div>
-        <li><Link to="/sex">2페이지</Link></li>
+        <li><Link to="/memo2">2페이지</Link></li>
         <li><Link to="/profiles/velopert">3페이지</Link></li>
         <li><Link to="/profiles/void">4페이지</Link></li>
         <br/>

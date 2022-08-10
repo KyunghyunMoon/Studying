@@ -9,11 +9,11 @@ console.log('searchParams.has():', myURL.searchParams.has('page'));
 console.log('searchParams.keys():', myURL.searchParams.keys());
 console.log('searchParams.values():', myURL.searchParams.values());
 
-myURL.searchParams.append('filter', 'es3');
+myURL.searchParams.append('filter', 'es3');     //기존 내용 유지하며 추가
 myURL.searchParams.append('filter', 'es5');
 console.log(myURL.searchParams.getAll('filter'));
 
-myURL.searchParams.set('filter', 'es6');
+myURL.searchParams.set('filter', 'es6');       //변경
 console.log(myURL.searchParams.getAll('filter'));
 
 myURL.searchParams.delete('filter');
