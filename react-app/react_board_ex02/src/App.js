@@ -6,7 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function App() {
-  const [boardlist, setBoardlist] = useState({ boardlist: [] });
+  const [boardlist, setBoardlist] = useState({ boardList: [], }); 
 
   const [article, setArticle] = useState({   //게시판 글 정보 저장
     board_num: 0, // 초기값은 의미는 없음
@@ -17,11 +17,11 @@ function App() {
   });
 
   const [actionMode, setActionMode] = useState({ mode: 0 });
-
+//0: 글쓰기 1: 상세보기 2: 글 수정
   const getList = () => {
     axios
-      .get("http://localhost:8008/list", {})
-      .then((res) => {
+      .get("http://localhost:8008/list", {}) 
+      .then((res) => {  //성공적으로 호출 시
         const { data } = res;
         console.log("data ==>", data);
         setBoardlist({
@@ -32,8 +32,8 @@ function App() {
           mode: 0,
         });
       })
-      .catch((e) => {
-        console.log(e);
+      .catch((e) => { //호출 실패 시
+        console.error(e);
       });
   };
 
@@ -42,7 +42,7 @@ function App() {
     axios
       .post("http://localhost:8008/detail", { num: e.target.id })
       .then((res) => {
-        const { data } = res;   //데이터 비구조화
+        const { data } = res;   //데이터 비구조화  배열형태로 저장.
         console.log("detail =>", data);
         if (res.data.length > 0) {
           setArticle({
@@ -53,7 +53,8 @@ function App() {
             board_content: data[0].BOARD_CONTENT,
             board_date: data[0].BOARD_DATE,
           });
-          setActionMode({
+
+          setActionMode({          //스프레드 연산자 복제.
             ...actionMode,
             mode: 1,
           });

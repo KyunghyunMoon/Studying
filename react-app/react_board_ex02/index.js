@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 const db = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "123465",
+    password: "123456",
     database: "bbs",
 });
 
@@ -34,7 +34,7 @@ app.get("/list", (req, res) => {
     const sqlQuery = 
     "SELECT BOARD_NUM, BOARD_WRITER, BOARD_TITLE, BOARD_CONTENT, DATE_FORMAT(BOARD_DATE, '%Y-%m-%d') AS BOARD_DATE FROM BOARD_TBL;";
     db.query(sqlQuery, (err, result) => {
-        res.send(result);
+        res.send(result); //다양한 형식 파일 보내기 가능
     });
 });
 
@@ -50,5 +50,43 @@ app.post("/insert", (req, res) => {
             res.send(result);
         });
 });
+
+app.post("/detail", (req, res) => {
+    console.log("/detail", req.body);
+    var num = parseInt(req.body.num);
+
+
+    const sqlQuery = 
+        "select board_num, board_writer, board_title, board_content, date_format(board_date, '%Y-%m-%d') as board_date from board_tbl where board_num = ?;";
+        db.query(sqlQuery, [num], (err, result) => {
+            res.send(result);
+        });
+});
+
+app.post("/update", (req, res) => {
+    console.log("/update", req.body);
+    var title = req.body.article.board_title;
+    var content = req.body.article.board_content;
+    var num = req.body.article.board_num;
+
+    const sqlQuery = 
+    "update board_tbl set board_title=?, board_content=?, board_date=now() where board_num=?;";
+    db.query(sqlQuery, [title, content, num], (err, result) => {
+        res.send(result);
+        console.log("result=", result);
+    });
+});
+
+app.post("/delete", (req, res) => {
+    const num = req.body.num;
+    console.log("/delete(id) => ", num);
+
+    const sqlQuery = "delete from board_tbl where board_num = ?;";
+    db.query(sqlQuery, [num], (err, result) => {
+        console.log(err);
+        res.send(result);
+    });
+});
+
 
 

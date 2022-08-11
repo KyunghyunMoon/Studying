@@ -1,9 +1,21 @@
 import { useEffect  } from 'react';
 import BoardArticle from './BoardArticle';
 
-const BoardList = () => {
-    if(1) {
-        return (
+const BoardList = ({
+   boardlist,
+   actionmode,
+   handlelist,
+   handledetail,
+   handleupdateform,
+}) => {
+    useEffect(() => {   // 어떤일을 수행하고 싶을 때 이펙트 안에 
+        handlelist();
+    }, []);  // []: 맨 처음 렌더링 할 때 수행하라.
+
+   
+  
+    if(boardlist.boardList.length === 0) { 
+     return (
             <div>
             <table width='700px' border='1' align='center'>
             <thead>
@@ -32,11 +44,22 @@ const BoardList = () => {
                 </tr>
             </thead>
             <tbody>
-                <BoardArticle />
+                {boardlist.boardList.map((article, index) => {
+                    return (
+                        <BoardArticle
+                            actionmode={actionmode}
+                            article={article}
+                            key={index}
+                            handlelist={handlelist}
+                            handledetail={handledetail}
+                            handleupdateform={handleupdateform}
+                        />
+                    );
+                 })}
             </tbody>
             </table>
             </div>         
-        )
+        );
     }
 };
 export default BoardList;
