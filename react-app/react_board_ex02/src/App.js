@@ -38,7 +38,7 @@ function App() {
   };
 
   const handleDetail = (e) => {
-    alert("handleDetail(actionMode) =>" + actionMode);
+    alert("handleDetail(actionMode) =>" + actionMode.mode);
     axios
       .post("http://localhost:8008/detail", { num: e.target.id })
       .then((res) => {
@@ -100,7 +100,8 @@ function App() {
       .post("http://localhost:8008/update", {
         article: article,
       })
-      .then(() => {
+      .then((res) => {
+        console.log("handlepdate(changedRows) =>", res.data.changedRows);
         getList();
       })
       .catch((e) => {

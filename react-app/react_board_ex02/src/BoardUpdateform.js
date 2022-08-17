@@ -11,6 +11,7 @@ const BoardUpdateForm = ({article, setarticle, handleupdate}) => {
         <div>
             <form>
                 <table border="1" width="700px" align="center">
+                    <tbody>
                     <tr>
                         <td width="100px">제목</td>
                         <td align="left" width="600px">
@@ -47,6 +48,7 @@ const BoardUpdateForm = ({article, setarticle, handleupdate}) => {
                         onClick={handleupdate}></input>    
                         </td>
                     </tr>
+                    </tbody>
                 </table>
             </form>
         </div>

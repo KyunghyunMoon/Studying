@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import './Memo.scss';
 import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+// import "swiper/scss/bundle";
+import "./style.scss";
+
+import "swiper/scss";
+import "swiper/scss/navigation";
+
+import { Navigation } from "swiper";
 
 
 const Memo = () => {
     return (
-        <div className='hoho'>
-        <div className='ho'>
+        <div>
           <h1 align="center" class name="head">SQL</h1>
-        </div>
-        <li><Link to="/memo2">2페이지</Link></li>
-        <li><Link to="/profiles/velopert">3페이지</Link></li>
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper"></Swiper>
+        <SwiperSlide><li><Link to="/memo2">2페이지</Link></li></SwiperSlide>
+        <SwiperSlide><li><Link to="/profiles/velopert">3페이지</Link></li></SwiperSlide>
         <li><Link to="/profiles/void">4페이지</Link></li>
         <br/>
         <li><Link to="/articles">목록</Link></li>
