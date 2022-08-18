@@ -14,7 +14,8 @@ function Main() {
 
   const navigate = useNavigate();
 
-  const [article, setArticle] = useState({   //한 행에 있는 데이터 저장하rl
+  const [article, setArticle] = useState({
+    //하나의 글을 저장하기위한 스테이트 보드 이미지를 저장할거기 때문에 보드 이미지를 추가했다. 보드테이블에서 한 줄을 저장하기 때문에 배열로 사용해서 저장한다.
     board_num: 0,
     board_writer: "",
     board_title: "",
@@ -89,6 +90,7 @@ function Main() {
 
   // 상세보기
   const handleDetail = (e) => {
+    // 보드이미지 데이터를 상세보기에서 확인하기 위해서 보드이미지문장을 추가 해줘야한다.
     // alert("handleDetail(actionMode) =>" + actionMode.mode);
     axios
       .post("http://localhost:8008/detail", { num: e.target.id })
@@ -119,6 +121,7 @@ function Main() {
 
   // 수정폼 보기
   const handleUpdateForm = (e) => {
+    //수정할 때 이미지는 수정가능 사항에서 ㅈ제외 시켰다.
     // alert(
     //   "handleUpdateForm(actionMode) =>" + actionMode.mode + ", " + e.target.id
     // );

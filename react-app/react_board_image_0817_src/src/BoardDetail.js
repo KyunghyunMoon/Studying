@@ -1,6 +1,7 @@
 const BoardDetail = ({ article, handlelist }) => {
   console.log("BoardDetail =>", article);
-  const image = "http://localhost:8008/uploads/" + article.board_image;
+  const image = "http://localhost:8008/uploads/" + article.board_image; //실제 업로드 된 파일의 위치를 확인할 수 있다.
+  // 이미지 경로를 설정한다. 서버에 8008번인데 업로드스폴드
   console.log("image =>", image);
   return (
     <div>
@@ -37,6 +38,8 @@ const BoardDetail = ({ article, handlelist }) => {
             </td>
           </tr>
           <tr>
+            {/* 행단위로 하나더 추가 해줌 이미지 에스알지 {이미지}로 브라우저에 뿌려준다. 별거 없데요 질문있으면 질문해주세요*/}
+            {/* 정리가 안되서 못한다. 정리를 했어야지 */}
             <td width="100px">이미지</td>
             <td align="left" width="600px">
               <img src={image} />
