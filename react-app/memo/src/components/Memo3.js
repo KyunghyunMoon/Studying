@@ -1,8 +1,12 @@
 import React from 'react';
+import './Memo.scss';
+import { Link } from 'react-router-dom';
 
 const Memo3 = () => {
     return (
         <div>
+            <Link to="/">메인</Link>
+
             08.09           
             mkdir:  디렉토리 만드는 것
             package.json: 라이브러리 관리
@@ -46,8 +50,28 @@ const Memo3 = () => {
             yarn add axios express body-parser mysql
             yarn add nodemon
 
-            
+            09.06
+            파이썬이란?
+            인터프리터 언어(Interpreter)
+            compiler: 컴퓨터가 번역할 수 있게 해주는 것
 
+            클래스 = 속성 + 메서드
+            객체 = 속성 + 메서드(함수)
+            플라스크
+            numpy, pandas, matplotlib, seaborry
+            파이선은 모든 데이터를 객체로 표현!
+
+            객체
+            클래스를 이용해서 만들어지며 속성과 메서드로 구성
+            
+            메서드: 객체의 속성을 다루기 위한 행위를 정의한 것
+            식별자: 대소문자를 구분. 길이 제한 x
+            변수: 변수에 값이 대입되는 순간 변수 생성
+            힙: 객체 저장
+            스택: 변수 저장
+            list = []
+            dict = {}
+            
         </div>
     );
 };

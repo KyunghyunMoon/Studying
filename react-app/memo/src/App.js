@@ -3,6 +3,7 @@ import './App.css';
 import Memo from './components/Memo';
 import React from 'react';
 import Memo2 from './components/Memo2';
+import Memo3 from './components/Memo3';
 import {Route, Routes } from 'react-router-dom';
 import Profile from './components/Profile';
 import Article from './components/Article';
@@ -16,6 +17,7 @@ const App = () => {
       <Route element={<Layout/>}>
         <Route path = "/" element={<Memo />} />
         <Route path = "/Memo2" element={<Memo2 />} />
+        <Route path = "/Memo3" element={<Memo3 />} />
         <Route path = "/profiles/:username" element ={<Profile />} />
       </Route>
       <Route path = "/articles" element ={<Articles />}>
